@@ -1,0 +1,69 @@
+*{
+    margin:0;
+    padding:0;
+    --color1:#F2D027;
+    --color2:#403501;
+    --color3:#0D0D0D;
+    --color4:#F2F2F2;
+    --color5:#BF705E;   
+}
+
+body{
+    background-image: url(imagenes/sw_fondo.jpg);
+}
+#contenedor{
+    width:90%;    
+    margin: 25px auto;    
+    padding: 10px;
+}
+#cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+}
+#contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;   
+    padding:10px;
+    margin:10px;
+}
+img{
+    max-width: 100%;
+    /* border:1px solid white; */
+    display: block;
+    margin: auto;
+}
+.episodio{
+    /* border:1px solid white; */
+    width: 30%;
+    padding:5px;    
+}
+#pie{    
+    text-align: center;
+    padding:10px
+}
+h1,h2,h3,h4{
+    text-align: center;
+    padding:20px;
+}
+h1,h3,h4{color:var(--color4);}
+h2{
+    color: var(--color1);
+}
+p{
+    text-align:justify ;
+    color: var(--color4);    
+}
+a{
+    color: #F2F2F2;
+}
+
+/* colocaremos border blancos para observar las secciones
+encabezado, contenido y pie de la web
+*/
+#cabecera,#contenido,#pie{
+    border:1px solid white;
+}
